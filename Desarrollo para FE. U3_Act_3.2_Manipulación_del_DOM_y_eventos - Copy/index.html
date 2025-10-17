@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Tabla dinámica con AJAX, jQuery y XML</title>
+
+  <!-- jQuery y jQuery UI -->
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.1/themes/smoothness/jquery-ui.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.min.js"></script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="contenedor" class="ui-widget ui-widget-content ui-corner-all">
+    <h2 class="ui-widget-header ui-corner-all">Gestión de Empleados (AJAX)</h2>
+
+    <div class="ui-widget-content ui-corner-all toolbar">
+      <label for="search">Buscar:</label>
+      <input type="text" id="search" placeholder="Filtrar por nombre o depto">
+
+      <label for="rows">Registros por página:</label>
+      <select id="rows">
+        <option value="2">2</option>
+        <option value="3" selected>3</option>
+        <option value="5">5</option>
+      </select>
+
+      <button id="reload" class="ui-button ui-widget ui-corner-all ui-state-default">
+        🔄 Actualizar datos (AJAX)
+      </button>
+    </div>
+
+    <table id="tabla-empleados" class="ui-widget ui-widget-content">
+      <thead>
+        <tr class="ui-widget-header">
+          <th data-sort="id">ID</th>
+          <th data-sort="nombre">Nombre</th>
+          <th data-sort="departamento">Departamento</th>
+          <th data-sort="salario">Salario</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+    <div id="paginacion" class="ui-widget-content ui-corner-all"></div>
+    <p id="total" class="ui-state-highlight ui-corner-all"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<empleados>
+  <empleado>
+    <id>1</id>
+    <nombre>Juan Pérez</nombre>
+    <departamento>Ventas</departamento>
+    <salario>25000</salario>
+  </empleado>
+  <empleado>
+    <id>2</id>
+    <nombre>María Gómez</nombre>
+    <departamento>Recursos Humanos</departamento>
+    <salario>28000</salario>
+  </empleado>
+  <empleado>
+    <id>3</id>
+    <nombre>Carlos Ruiz</nombre>
+    <departamento>TI</departamento>
+    <salario>32000</salario>
+  </empleado>
+  <empleado>
+    <id>4</id>
+    <nombre>Ana Torres</nombre>
+    <departamento>Marketing</departamento>
+    <salario>27000</salario>
+  </empleado>
+</empleados>
